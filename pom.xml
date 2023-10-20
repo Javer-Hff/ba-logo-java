@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>ba-logo-java</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>ba-logo-java</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <skiko.version>0.7.77</skiko.version>
+    <os>windows-x64</os>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.skiko</groupId>
+      <artifactId>skiko-awt-runtime-${os}</artifactId>
+      <version>${skiko.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.skiko</groupId>
+      <artifactId>skiko-awt</artifactId>
+      <version>${skiko.version}</version>
+    </dependency>
+  </dependencies>
+</project>
